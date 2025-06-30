@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <div className="navbar sticky-top">
         <div className="container-fluid">
-            <div className='navbar-brand'>Icono</div>
+            <div className='navbar-brand'>*Icono*</div>
             <div className='text-center d-flex'>
                 <ul className='navbar-nav mb-2 mb-lg-0 justify-content-center align-items-center'>
                     <li className='nav-item lv1-nav'><span className='nav-link'>
