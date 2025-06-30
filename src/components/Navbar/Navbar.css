@@ -1,0 +1,38 @@
+.navbar {
+    background-image: linear-gradient(#0F0F1A, #0000);
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: var(--lightest);
+}
+.navbar-brand:hover {
+    color: var(--lightest);
+}
+
+.nav-link {
+    color: var(--lightest);
+}
+.nav-link:hover {
+    color: var(--lightest);
+    cursor: pointer;
+}
+
+.navbar-text {
+    color: var(--lightest);
+}
+
+.lv1-nav { 
+    display: inline-flex;
+    position: relative;
+    color: #ffffff;
+}
+
+.lv1-nav:hover:after {
+    content: " ";
+    position: absolute;
+    border-bottom: solid 2px #ffffff;
+    width:  100%;
+    height: 10px;
+    bottom: 1px;
+}

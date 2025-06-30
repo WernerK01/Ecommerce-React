@@ -1,0 +1,71 @@
+:root {
+  --main-pink: #F58;
+  --alt-pink: #F69;
+  --dark-pink: #F35;
+  --darkest-pink: #D05;
+  --main-purple: #A6F;
+  --alt-purple: #95F;
+  --dark-purple: #53F;
+  --darkest-purple: #50D;
+  --darkest: #0F0F1A;
+  --darker: #1b1b2b;
+  --dark: #2b2b3b;
+  --pre-dark: #3b3b4F;
+  --mid-dark: #4b4b6b;
+  --mid: #6b6b8b;
+  --mid-light: #8080A0;
+  --pre-light: #8b8b9F;
+  --light: #AAC;
+  --lighter: #CCE;
+  --lightest: #EEF;
+}
+
+body { 
+  font-family: "Quicksand", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--darkest);
+  color: var(--lightest);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Baloo Da 2", sans-serif;
+  color: var(--lightest);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--lightest);
+  font-size: 1.5rem;
+}
+
+.supershadow-title {
+  text-shadow: 0 -2px 0 var(--darkest-purple), 0 2px 0 var(--darkest-purple),
+    2px 0 0 var(--darkest-purple), -2px 0 0 var(--darkest-purple),
+    -4px 2px 0 var(--darkest-purple), -2px 4px 0 var(--darkest-purple);
+  filter: drop-shadow(0 0 1px var(--dark-purple))
+    drop-shadow(-1px 1px 0px var(--dark-purple))
+    drop-shadow(0 0 0px var(--dark-purple))
+    drop-shadow(-1px 0 0px var(--dark-purple))
+    drop-shadow(-1px 0 0px var(--dark-purple))
+    drop-shadow(-1px 0 0px var(--dark-purple))
+    drop-shadow(-1px 0 0px var(--dark-purple));
+}
+
+.supershadow-text {
+  text-shadow: 0 -1px 0 var(--darkest-purple), 0 1px 0 var(--darkest-purple),
+    1px 0 0 var(--darkest-purple), -1px 0 0 var(--darkest-purple),
+    -2px 1px 0 var(--darkest-purple), -1px 2px 0 var(--darkest-purple);
+  filter: drop-shadow(0 0 1px var(--dark-purple))
+    drop-shadow(-1px 1px 0px var(--dark-purple))
+    drop-shadow(0 0 0px var(--dark-purple))
+    drop-shadow(-1px 0 0px var(--dark-purple));
+}
+
