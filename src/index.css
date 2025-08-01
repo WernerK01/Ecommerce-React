@@ -22,6 +22,17 @@
   --lightest: #EEF;
 }
 
+.dark-purple {
+  color: var(--dark-purple);
+}
+.darkest-purple {
+  color: var(darkest-purple);
+}
+.bg-dark-purple {
+  background-color: var(--dark-purple);
+}
+
+
 body { 
   font-family: "Quicksand", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -47,8 +58,8 @@ p {
   color: var(--darkest);
   font-size: 1.5rem;
 }
-
 .supershadow-title {
+  color: white;
   text-shadow: 0 -2px 0 var(--darkest-purple), 0 2px 0 var(--darkest-purple),
     2px 0 0 var(--darkest-purple), -2px 0 0 var(--darkest-purple),
     -4px 2px 0 var(--darkest-purple), -2px 4px 0 var(--darkest-purple);
@@ -70,4 +81,3 @@ p {
     drop-shadow(0 0 0px var(--dark-purple))
     drop-shadow(-1px 0 0px var(--dark-purple));
 }
-
