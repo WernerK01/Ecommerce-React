@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --main-pink: #F58;
   --alt-pink: #F69;
@@ -25,8 +27,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: var(--darkest);
-  color: var(--lightest);
+  background-color: var(--lightest);
+  color: var(--darkest);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,13 +38,13 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "Baloo Da 2", sans-serif;
-  color: var(--lightest);
+  color: var(--darkest);
   font-weight: 900;
   font-size: 2.5rem;
 }
 
 p {
-  color: var(--lightest);
+  color: var(--darkest);
   font-size: 1.5rem;
 }
 

@@ -1,19 +1,21 @@
-import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
-import { Navbar } from "./components/Navbar/Navbar"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { ItemListContainer } from "./components/pages/ItemListContainer/ItemListContainer.jsx"
+import { Navbar } from "./components/layout/Navbar/Navbar.jsx"
+import NotFound from "./components/pages/notFound/NotFound.jsx"
+import ItemDetailContainer from "./components/pages/ItemDetailContainer/ItemDetailContainer.jsx";
 
 function App() {
-
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <h1 className="text-center supershadow-title">Ecommerce Koll</h1>
-      <p className="text-center supershadow-text">¡Bienvenido a la página principal!</p>
-      <ItemListContainer 
-        name={"Auriculares Inalambricos Soundcore C30i Bt Ergonómico Negro"} 
-        price={1500}
-      />
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:name" element={<ItemListContainer />} />
+        <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
