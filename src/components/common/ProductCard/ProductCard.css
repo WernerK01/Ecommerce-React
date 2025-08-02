@@ -1,0 +1,9 @@
+.card-header {
+    color: var(--darkest);
+    font-size: 1.7rem !important;
+}
+
+.card-p {
+    color: var(--dark);
+    font-size: 1rem;
+}

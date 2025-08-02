@@ -1,3 +1,7 @@
+.bg-dark-purple {
+  background-color: var(--dark-purple);
+}
+
 .bg-dark-purple:hover {
-    color: var(darkest-purple);
+    background-color: var(--darkest-purple);
 }
