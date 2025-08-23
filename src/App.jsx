@@ -10,8 +10,8 @@ import Checkout from "./components/pages/Checkout/Checkout";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <CartContextProvider>
+        <Navbar />
         <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:name" element={<ItemListContainer />} />

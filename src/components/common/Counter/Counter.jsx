@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import CustomButton from "../CustomButton/CustomButton.jsx";
 import { CartContext } from "../../../context/CartContext.jsx";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import './Counter.css';
 

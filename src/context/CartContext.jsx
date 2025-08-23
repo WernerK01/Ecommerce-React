@@ -18,21 +18,21 @@ const CartContextProvider = ({ children }) => {
         setCart([]);
     }
 
-    const getTotalQuanty = () => {
-        let total = cart.reduce((acc, item) => {
-            return acc + item.quantity;
-        }, 0);
-        return total;
-    };
-
     const getTotalAmount = () => {
-        const total = cart.reduce((acc, item) => {
-            return acc + item.price * item.quantity;
+        const total = cart.reduce((x, item) => {
+            return x + item.price * item.quantity;
         }, 0);
 
         return total;
     };
 
+    const getTotalQuanty = () => {
+        let total = cart.reduce((x, item) => {
+            return x + item.quantity;
+        }, 0);
+        return total;
+    };
+    
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
@@ -43,8 +43,8 @@ const CartContextProvider = ({ children }) => {
             addToCart: addToCart,
             removeByID: removeByID,
             resetCart: resetCart,
+            getTotalQuanty: getTotalQuanty,
             getTotalAmount: getTotalAmount,
-            getTotalQuanty: getTotalQuanty
     }}>{children}</CartContext.Provider>
 
 }
