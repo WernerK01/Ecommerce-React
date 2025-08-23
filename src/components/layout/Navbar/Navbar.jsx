@@ -5,9 +5,6 @@ import { Link } from "react-router";
 import { IoGameController } from "react-icons/io5";
 import { RiComputerFill } from "react-icons/ri";
 
-
-import { BsThreeDots } from "react-icons/bs";
-
 export const Navbar = () => {
   return (
     <div>

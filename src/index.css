@@ -55,6 +55,7 @@ p {
   color: var(--darkest);
   font-size: 1.5rem;
 }
+
 .supershadow-title {
   color: white;
   text-shadow: 0 -2px 0 var(--darkest-purple), 0 2px 0 var(--darkest-purple),
